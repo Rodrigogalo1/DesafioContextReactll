@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: "Maitree", serif;
+  text-align: center;
+  color: #43a047;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+
+/* Navbar */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  background: #43a047;
+  padding: 20px;
+  color: white;
+}
+
+/* gallery */
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.grid-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery .photo {
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 15px black;
+}
+
+.gallery .photo:hover {
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+.gallery .photo svg {
+  align-self: flex-end;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+
+.gallery-container {
+  padding: 20px;
+}
+
+.gallery-container .card {
+  overflow: hidden;
+}
+
+.gallery-container .card .card-img-overlay {
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .btn {
+  margin: 0 5px;
+}
+
+.pagination .btn.active {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+button.position-absolute {
+  cursor: pointer;
+  z-index: 99;
+}
